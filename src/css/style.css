@@ -31,7 +31,3 @@ nav > ul > li {
 .flow > * + * {
     margin-top: var(--flow-space, 1rem);
 }
-
-footer {
-    
-}
