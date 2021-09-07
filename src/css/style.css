@@ -15,7 +15,7 @@ main {
     padding-right: 1rem;
 }
 
-nav {
+nav, footer {
     width: 100%;
     max-width: 48rem;
 }
@@ -30,4 +30,8 @@ nav > ul > li {
 
 .flow > * + * {
     margin-top: var(--flow-space, 1rem);
+}
+
+footer {
+    
 }
