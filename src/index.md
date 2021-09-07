@@ -2,10 +2,8 @@
 
 layout: base.njk
 
-title: Very Cozy
-
 ---
 
-# sås
+# Welcome to my learning blog
 
-## this is content from markdown
+this is a very tech savy site.
