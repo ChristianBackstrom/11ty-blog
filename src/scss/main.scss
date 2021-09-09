@@ -2,10 +2,9 @@
 
 @import "type";
 
-@import "utility/container";
-
 @import "components/navigation";
 
+@import "utility/container";
 
 * {
     margin: 0;
@@ -22,11 +21,11 @@ main {
     max-width: 48rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    margin: 5%;
 }
 
 nav, footer {
     width: 100%;
-    max-width: 48rem;
 }
 nav > ul {
     display: flex;
