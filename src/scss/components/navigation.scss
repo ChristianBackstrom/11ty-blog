@@ -1,0 +1,32 @@
+.navbar { 
+    background: #0082e6;  
+    width: 100%;
+    padding-left: 5%;
+}
+
+nav ul{  
+    margin-right:20px; 
+    a.active,a:hover{
+        background-color: #1b9bff;
+        transition: 0.7s;
+    }
+    a{
+        color: white;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-decoration: none;
+    }
+}
+
+nav{
+    ul {
+
+        li {
+            display: inline-block; 
+            font-size: 1.5rem;
+            line-height:80px;
+            margin: 0 5px; 
+        }
+    } 
+}
+
