@@ -1,0 +1,11 @@
+---
+layout: base.njk
+---
+{{ content | safe }}
+    <ul>
+        {% for item in git %}
+            <li>
+                <a target="_blank" href="{{item.html_url}}">{{item.name}}</a>
+            </li>
+        {% endfor %}
+    </ul>
