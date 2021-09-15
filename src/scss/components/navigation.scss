@@ -1,31 +1,36 @@
 .navbar { 
-    background: #666A86;  
     width: 100%;
-    padding-left: 5%;
-}
+    padding-left: 2%;
 
-nav ul{  
-    margin-right:20px; 
-    a.active,a:hover{
-        background-color: #4a4c63;
-        transition: 0.7s;
+    h1{
+        margin-left: 0;
     }
-    a{
-        color: white;
-        padding: 7px 13px;
-        border-radius: 3px;
+    a {
+        background-color: wheat;
+        color: black;
         text-decoration: none;
     }
+    li:hover{
+        background-color: rgb(236, 236, 236);
+        transition: 0.5s;
+    }
 }
 
-nav{
-    ul {
-        li {
-            display: inline-block; 
-            font-size: 1.5rem;
-            line-height:80px;
-            margin: 0 5px; 
-        }
-    } 
+nav > ul {
+    display: block;
+    margin-left: 5%;
 }
+
+.list-item{
+    font-size: 1rem;
+    margin-top: 1%;
+    max-width: 20%;
+}
+
+hr {
+    margin-left: 0.1rem;
+}
+
+
+
 
