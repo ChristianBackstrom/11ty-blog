@@ -1,10 +1,12 @@
-<ul>
+<ul class="list">
     {% for post in collections.post %}
-        <li>
-            <a href="{{ post.url }}">{{ post.data.title }}</a>
-            {% if post.data.excerpt %}
-                <p>{{ post.data.excerpt }}</p>
-            {% endif %}}
-        </li>
-    {% endfor %}
-</ul>
+        <a href="{{ post.url }}">
+            <li class="list-item">
+                {{ post.data.title }}
+                {% if post.data.excerpt %}
+                    <p>{{ post.data.excerpt }}</p>
+                {% endif %}
+                <hr class="divider" size="1" width="15%" color="#705D56"></li>
+            </a>
+        {% endfor %}
+    </ul>

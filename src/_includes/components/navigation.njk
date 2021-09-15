@@ -1,10 +1,15 @@
 {% if navigation.items %}
-    <nav class="navbar container">
+    <nav class="navbar">
+        <h1>CBB Archives</h1>
+
         <ul>
             {% for item in navigation.items %}
-                <li>
-                    <a href="{{ item.url }}">{{ item.text }}</a>
-                </li>
+                <a href="{{ item.url }}">
+                    <li>
+                            {{ item.text }}
+                    </li>
+                </a>
+                <hr size="1" width="20%" color="#705D56">
             {% endfor %}
         </ul>
     </nav>

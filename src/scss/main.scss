@@ -4,7 +4,6 @@
 
 @import "utility/container";
 
-@import "components/navigation";
 
 @import "components/footer";
 
@@ -16,30 +15,51 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #70ABAF;
 }
 
 .content {
     width: 100%;
-    padding: 1%;
-    max-width: 48rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin:0;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    border-radius: 20px;
+    margin: 5rem;
+    max-width: 72rem;
     box-shadow: 0px 0px 50px -15px rgba(0,0,0,0.58);
     h1,h2,h3{
         margin: 1rem;
+        margin-left: -1rem;
+    }
+    background-color: #F0F7F4;
+}
+
+.main-content{
+    max-width: 48rem;
+    margin: 10% auto 10% auto;
+
+    li {
+        transition: 0.5s;
+    }
+    li:hover {
+        background-color: #d9e0dd;
+        transition: 0.5s;
     }
 }
 
 nav, footer {
     width: 100%;
 }
+
 nav > ul {
     display: flex;
     list-style: none;
+}
+
+.list {
+    list-style: none;
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #32292F;
+    }
 }
 
 nav > ul > li {
@@ -48,4 +68,21 @@ nav > ul > li {
 
 .flow > * + * {
     margin-top: var(--flow-space, 1rem);
+}
+
+.divider{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@import "components/navigation";
+
+.list-item{
+    padding-bottom: 0.2rem;
+    padding-top: 0.2rem
+}
+
+.description {
+    font-size: 1rem;
+    font-weight: normal;
 }
