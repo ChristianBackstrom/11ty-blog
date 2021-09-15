@@ -31,8 +31,16 @@ body {
 }
 
 .main-content{
-    max-width: 58rem;
-    margin: 10%;
+    max-width: 48rem;
+    margin: 10% auto 10% auto;
+
+    li {
+        transition: 0.5s;
+    }
+    li:hover {
+        background-color: #d9e0dd;
+        transition: 0.5s;
+    }
 }
 
 nav, footer {
@@ -44,12 +52,8 @@ nav > ul {
     list-style: none;
 }
 
-ul {
+.list {
     list-style: none;
-}
-
-.list-item{
-    margin: 1rem;
 
     a {
         text-decoration: none;
@@ -66,4 +70,19 @@ nav > ul > li {
     margin-top: var(--flow-space, 1rem);
 }
 
+.divider{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 @import "components/navigation";
+
+.list-item{
+    padding-bottom: 0.2rem;
+    padding-top: 0.2rem
+}
+
+.description {
+    font-size: 1rem;
+    font-weight: normal;
+}
