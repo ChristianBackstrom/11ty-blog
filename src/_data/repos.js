@@ -1,8 +1,16 @@
 const axios = require('axios');
 
-module.exports = async() => {
-    const {data} = await axios.get('https://api.github.com/users/ChristianBackstrom/repos');
+module.exports = async () => {
+    try{
 
-
-    return data;
-}
+        let json = await Cache('https://api.github.com/users/ChristianBackstrom/repos', {
+            duration: '1d', // 1 day
+            type: 'json' // also supports "text" or "buffer"
+        });
+        console.log(json);
+        return json;
+    } catch (e) {
+        console.log(e);
+        return {};
+    }
+};
