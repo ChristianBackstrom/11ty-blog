@@ -1,4 +1,6 @@
 const axios = require('axios');
+const Cache = require('@11ty/eleventy-cache-assets');
+
 
 module.exports = async () => {
     try{
