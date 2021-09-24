@@ -1,9 +1,7 @@
 ---
-
 layout: base.njk
-
 ---
 
 # Welcome to my learning blog
 
-this is a very tech savy site.
+This is a place where i will be doing weekly updates about what i have done in the weeks. It will not only be this but I will be updating it with different projects i do and have finished.

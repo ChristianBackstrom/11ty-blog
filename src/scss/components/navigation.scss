@@ -1,35 +1,46 @@
-.navbar { 
+.navbar {
     width: 100%;
-    padding-left: 2%;
+    background-color: #02111b;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    h1{
-        margin-left: 0;
-        
+    h1 {
+        font-weight: bold;
+        font-style: normal;
     }
+
     a {
-        color: black;
+        color: white;
         text-decoration: none;
     }
 
-    li{
-        padding: 0.1rem;
-
+    ul {
+        max-width: 80%;
+        margin: auto;
+        display: flex;
+        background-color: #3f4045;
+        justify-content: center;
+        border-radius: 20px 20px 0 0;
+        a {
+            padding: 3%;
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+            font-family: sans-serif;
+        }
     }
-    li:hover{
-        background-color: rgb(236, 236, 236);
-        transition: 0.5s;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        ul {
+            width: 100%;
+            a {
+                padding: 1rem 0 1rem 0;
+                font-size: 1.5rem;
+            }
+        }
     }
 }
-
-nav > ul {
-    display: block;
-    margin-left: 5%;
-}
-
-hr {
-    margin-left: 0.1rem;
-}
-
-
-
-

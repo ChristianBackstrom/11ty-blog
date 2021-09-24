@@ -2,7 +2,7 @@
     {% for item in repos %}
         <a target="_blank" href="{{item.html_url}}">
             <li class="list-item">
-                {{item.name}} 
+                <h3>{{item.name}}</h3> 
                 <p class="description">
                 {% if item.description|length %}
                     {{item.description}}
@@ -10,7 +10,6 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nostrum illo consequatur necessitatibus! Ullam, rerum. Nisi, quidem odit? Obcaecati nobis.               
                 {% endif %}
                 </p>
-                <hr class="divider" size="1" width="5%" color="#705D56">
             </li>
         </a>
     {% endfor %}
