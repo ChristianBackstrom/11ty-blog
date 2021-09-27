@@ -75,3 +75,15 @@ main {
     }
 
 }
+
+.textures {
+    background:
+    radial-gradient(#3f4045 4px, transparent 4px),
+    radial-gradient(#3f4045 4px, transparent 4px),
+    linear-gradient(#000 2px, transparent 4px),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #3f4045 75px, #3f4045 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #3f4045 76px, #3f4045 77px, transparent 78px, transparent 109px),
+    #000;
+    background-size: 109px 110px, 109px 110px,100% 8px, 109px 109px, 109px 110px;
+    background-position: 55px 56px, 1px 0px, 0px 0px, 1px 1px, 1px 0px;
+}
